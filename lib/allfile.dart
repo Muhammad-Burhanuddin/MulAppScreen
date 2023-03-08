@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:localnotificationstest/screens/editpersonelinformation.dart';
 import 'package:localnotificationstest/screens/filedownloader.dart';
 
+import 'screens/filepick.dart';
+import 'screens/guidlinesandhelpscreen.dart';
 import 'screens/home_screen.dart';
 import 'screens/leavescreen.dart';
 
@@ -43,6 +45,23 @@ class _AllScreensState extends State<AllScreens> {
                     MaterialPageRoute(builder: (context) => Personal()));
               },
               child: Text('Edit Personal Information')),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => GuidlineAndHelpScreen()));
+              },
+              child: Text('Guidline')),
+  ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => FilePickerScreen()));
+              },
+              child: Text('File Piker')),
+
         ],
       ),
     );

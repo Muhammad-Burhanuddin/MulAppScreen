@@ -9,6 +9,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  // ignore: non_constant_identifier_names
   String _Years = "0000";
   String _marks = "800";
   String _grades = "A+";
