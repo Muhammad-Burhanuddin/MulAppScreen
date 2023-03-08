@@ -46,7 +46,6 @@ class _FileDownloaderState extends State<FileDownloader> {
         await dio
             .download(pdfUrl, "$path${convertCurrentDateTimeToString()}.pdf",
                 onReceiveProgress: (receivedBytes, totalBytes) {
-          print('here 1');
           setState(() {
             progress =
                 "${((receivedBytes / totalBytes) * 100).toStringAsFixed(0)}%";
